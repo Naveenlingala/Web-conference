@@ -1,0 +1,22 @@
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+video {
+    width: 45%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+#start-stop-button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#start-stop-button:hover {
+    background-color: #3e8e41;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Real-time Video Streaming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="{% static 'camera_feed/css/styles.css' %}" />
+  </head>
+  <body>
+    {% block content %} {% endblock %}
+
+    
+    <script type="text/javascript" src="{% static 'camera_feed/js/main.js' %}"></script>
+  </body>
+</html>
