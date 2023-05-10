@@ -61,6 +61,12 @@ TEMPLATES = [
 ASGI_APPLICATION = "webstream.asgi.application"
 # WSGI_APPLICATION = "webstream.wsgi.application"
 
+# Not for developnment
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
+}
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases

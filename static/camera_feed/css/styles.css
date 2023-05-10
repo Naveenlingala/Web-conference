@@ -1,22 +1,57 @@
+body {
+    background-color: #d3f5f8; /* Set your desired background color */
+    font-family: "Helvetica Neue", Arial, sans-serif; /* Choose a modern font */
+}
+  
+video {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+}
+  
 .video-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-  }
-video {
-    width: 45%;
-    border: 2px solid #ddd;
-    border-radius: 5px;
 }
-#start-stop-button {
-    padding: 10px;
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px
+}
+.hidden {
+    display: none;
+}
+
+#start-button {
+    padding: 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
 }
-#start-stop-button:hover {
+
+#stop-button {
+    padding: 20px;
+    background-color: #af4c4cd0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#stop-button:hover {
+    background-color: #ff0000;
+}
+
+#start-button:hover {
     background-color: #3e8e41;
 }

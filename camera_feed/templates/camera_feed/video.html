@@ -1,8 +1,20 @@
 <div>
-  <h1>Two Video Streams with Start/Stop Button</h1>
+  <h1>Real-time Video Streaming using WebSockets</h1>
   <div class="video-container">
-    <video id="video1" autoplay playsinline></video>
-    <video id="video2" autoplay playsinline></video>
+    <div id="Webcam" class="hidden">
+      <h2>Webcam Input</h2>
+      <video id="input_video" autoplay playsinline></video>
+    </div>
+
+    <div id="liveStream" class="hidden">
+      <h2>Broadcasting Video</h2>
+      <img src="" id="received_video" />
+    </div>
   </div>
-  <button id="start-stop-button">Start/Stop</button>
+  <div class="button-container">
+    <button id="start-button">Start Streaming</button>
+    <button id="stop-button" class="hidden">Stop Streaming</button>
+  </div>
+
+  <button class="hidden">record</button>
 </div>
